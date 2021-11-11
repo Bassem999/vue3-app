@@ -6,15 +6,20 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev:css": "tailwind -o ./src/assets/style.css --watch --minify"
   },
   "dependencies": {
+    "@editorjs/editorjs": "^2.22.2",
+    "@editorjs/embed": "^2.4.6",
+    "@editorjs/header": "^2.6.1",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0-alpha.3",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
